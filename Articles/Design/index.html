@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+      CREDITS:
+      Navbar -> https://codepen.io/agrimsrud/pen/XWNLMeW, Anders Grimsrud
+      Article template -> https://codepen.io/tin-fung-hk/pen/rNpEPpM, Taylon, Chan
+      Menu -> https://front.codes/ "Pure CSS Menu - #13"
+    -->
+    <title>The Art of Industry</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="progress-top"></div>
+    <div class="progress-right"></div>
+    <div class="progress-bottom"></div>
+    <div class="progress-left"></div>
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+    <label for="menu-icon"></label>
+    <nav class="menu">
+      <ul class="“pt-5”">
+        <li><a href="/index.html">Home</a></li>
+        <li>
+          <a href="" onclick="window.location.reload(); return false;"
+            >Latest Post</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://projectadonis.github.io">My Work</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="nav">
+      <ul>
+        <li><a href="#one">Intro</a></li>
+        <li>
+          <a href="#two">The Role</a>
+          <ul>
+            <li>
+              <a href="#three">Sustainability</a>
+              <ul>
+                <li>
+                  <a href="#four">The Goal</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#five">The Process</a>
+        </li>
+        <li><a href="#six">Conclusion</a></li>
+      </ul>
+
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <path />
+      </svg>
+    </nav>
+    <article id="top">
+      <header style="background-image: url('../../Assets/Design/header.webp')">
+        <div class="upper-header">
+          <div class="mini-title">article</div>
+          <div class="date-since">
+            <p><span class="date-value" id="sinceData"></span></p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30">
+              <defs>
+                <style>
+                  .d {
+                    width: 20px;
+                    fill: #fff;
+                    opacity: 0.5;
+                  }
+                </style>
+              </defs>
+              <path
+                class="d"
+                d="M15,0C6.75,0,0,6.75,0,15s6.75,15,15,15,15-6.75,15-15S23.25,0,15,0Zm7.35,16.65h-7.35c-.83,0-1.5-.67-1.5-1.5V7.8c0-.9,.6-1.5,1.5-1.5s1.5,.6,1.5,1.5v5.85h5.85c.9,0,1.5,.6,1.5,1.5s-.6,1.5-1.5,1.5Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="lower-header">
+          <div class="tags-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
+              <defs>
+                <style>
+                  .d {
+                    width: 20px;
+                    fill: #fff;
+                    opacity: 0.75;
+                  }
+                </style>
+              </defs>
+              <path
+                class="d"
+                d="M19.22,9.66L10.77,1.21c-.74-.74-1.86-1.21-2.97-1.21H1.67C.75,0,0,.75,0,1.67V7.8c0,1.11,.46,2.23,1.3,2.97l8.45,8.46c1,1,2.62,1,3.62,0l5.94-5.95c.93-.93,.93-2.6-.09-3.62ZM6.96,6.35c-.59,.59-1.56,.59-2.15,0-.59-.59-.59-1.56,0-2.15,.59-.59,1.56-.59,2.15,0,.59,.59,.59,1.56,0,2.15Z"
+              ></path>
+            </svg>
+            <span>Nature</span><span>Animal</span>
+          </div>
+          <h1 class="title">A Blend of Function and Aesthetics</h1>
+          <p class="subtitle">
+            Exploring how industrial design transforms everyday items, from
+            simple paperclips to advanced technology.
+          </p>
+        </div>
+      </header>
+      <div class="summary">
+        <div class="summary-item">
+          <h5 class="item-title">Reading Time</h5>
+          <p class="item-text"><span class="item-data">4</span> Mins</p>
+        </div>
+        <div class="summary-item">
+          <h5 class="item-title">Share</h5>
+          <p class="item-text">
+            Copy link:
+            <button class="copy" onclick="copyToClipboard()">
+              <span
+                data-text-end="Copied!"
+                data-text-initial="Copy link to clipboard"
+                class="tooltip"
+              ></span>
+              <span>
+                <svg
+                  xml:space="preserve"
+                  style="enable-background: new 0 0 512 512"
+                  viewBox="0 0 6.35 6.35"
+                  y="0"
+                  x="0"
+                  height="20"
+                  width="20"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="clipboard"
+                >
+                  <g>
+                    <path
+                      fill="currentColor"
+                      d="M2.43.265c-.3 0-.548.236-.573.53h-.328a.74.74 0 0 0-.735.734v3.822a.74.74 0 0 0 .735.734H4.82a.74.74 0 0 0 .735-.734V1.529a.74.74 0 0 0-.735-.735h-.328a.58.58 0 0 0-.573-.53zm0 .529h1.49c.032 0 .049.017.049.049v.431c0 .032-.017.049-.049.049H2.43c-.032 0-.05-.017-.05-.049V.843c0-.032.018-.05.05-.05zm-.901.53h.328c.026.292.274.528.573.528h1.49a.58.58 0 0 0 .573-.529h.328a.2.2 0 0 1 .206.206v3.822a.2.2 0 0 1-.206.205H1.53a.2.2 0 0 1-.206-.205V1.529a.2.2 0 0 1 .206-.206z"
+                    ></path>
+                  </g>
+                </svg>
+                <svg
+                  xml:space="preserve"
+                  style="enable-background: new 0 0 512 512"
+                  viewBox="0 0 24 24"
+                  y="0"
+                  x="0"
+                  height="18"
+                  width="18"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="checkmark"
+                >
+                  <g>
+                    <path
+                      data-original="#000000"
+                      fill="currentColor"
+                      d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+            </button>
+          </p>
+        </div>
+        <div class="summary-item">
+          <h5 class="item-title">Publish Date</h5>
+          <p class="item-text">
+            <span class="item-data" id="dateData"></span>
+          </p>
+        </div>
+      </div>
+      <div class="main-article">
+        <section id="one">
+          <h4>The Philosophy Behind Industrial Design</h4>
+          <p>
+            At its core,
+            <a
+              href="https://en.wikipedia.org/wiki/Industrial_design"
+              target="_blank"
+              >industrial design</a
+            >
+            is not just about crafting objects that are pleasing to the eye;
+            it's about marrying functionality with aesthetics to solve problems
+            and enhance our daily lives. It's a discipline that asks, "How can
+            we make this better?" whether 'this' refers to a user interface, a
+            piece of furniture, or a complex machinery component.
+          </p>
+          <p>
+            Consider the evolution of the chair: from a mere four legs and a
+            back to ergonomic masterpieces that support our bodies in the
+            workplace. This journey encapsulates the essence of industrial
+            design — the relentless pursuit of improvement, comfort, and
+            sustainability.
+          </p>
+          <div class="gallery">
+            <div class="gallery-mask mask-off">
+              <img class="mask-image" src="" alt="" width="200" />
+            </div>
+            <div
+              class="image-item image-1"
+              alt=""
+              width="200"
+              style="background-image: url('/Assets/Design/Braun.webp')"
+            ></div>
+            <div
+              class="image-item image-2"
+              alt=""
+              width="200"
+              style="
+                background-image: url('/Assets/Design/Juicer-Squeezer.webp');
+              "
+            ></div>
+            <div
+              class="image-item image-3"
+              alt=""
+              width="200"
+              style="
+                background-image: url('/Assets/Design/Rocking\ Chair.webp');
+              "
+            ></div>
+            <div
+              class="image-item image-4"
+              alt=""
+              width="200"
+              style="background-image: url('/Assets/Design/Egg\ Chair.webp')"
+            ></div>
+            <div
+              class="image-item image-5"
+              alt=""
+              width="200"
+              style="
+                background-image: url('/Assets/Design/Portable\ EV\ Charger.webp');
+              "
+            ></div>
+          </div>
+        </section>
+        <section id="two">
+          <h4>The Role of Technology in Industrial Design</h4>
+          <p>
+            The advent of digital technology has revolutionized industrial
+            design. With the help of advanced software, designers can now
+            simulate environments, test the durability of materials, and
+            visualize the end product in stunning detail before the first
+            prototype is ever built. This not only saves time and resources but
+            also allows for a level of precision and creativity that was
+            previously unimaginable.
+          </p>
+          <p>
+            From 3D printing to virtual reality, technology empowers designers
+            to push the boundaries of what's possible, leading to innovations
+            that can adapt to our changing needs and environments.
+          </p>
+          <blockquote>
+            <span class="lighter-text">
+              "Design is so simple, that's why it is so complicated." — Paul
+              Rand
+            </span>
+          </blockquote>
+        </section>
+        <section id="three">
+          <h4>Sustainability: A Core Principle of Modern Industrial Design</h4>
+          <p>
+            As the world becomes increasingly aware of environmental issues,
+            sustainability has risen to the forefront of industrial design.
+            Today's designers are tasked with creating products that not only
+            stand the test of time but also minimize their ecological footprint.
+            This involves selecting materials, manufacturing processes, and
+            product lifecycles that are as eco-friendly as possible.
+          </p>
+          <p>
+            The challenge lies in creating beautiful, functional products
+            without sacrificing the health of our planet — a task that requires
+            innovation, creativity, and a deep understanding of both materials
+            and the environmental impact of design decisions.
+          </p>
+          <blockquote>
+            <span class="lighter-text">
+              "Good design is obvious. Great design is transparent." — Joe
+              Sparano
+            </span>
+          </blockquote>
+        </section>
+        <section id="four">
+          <h4>The Human Element in Industrial Design</h4>
+          <p>
+            At the heart of every design project lies the human element.
+            Industrial designers do not just create objects; they shape
+            experiences. Every curve, texture, and function is crafted with the
+            end user in mind, aiming to evoke emotions, solve problems, and
+            enhance usability.
+          </p>
+          <p>
+            Whether it's the comfort of holding a well-designed smartphone or
+            the intuitive ease of navigating a user-friendly website, the goal
+            is always to enrich lives and make daily tasks more enjoyable and
+            efficient.
+          </p>
+        </section>
+        <section id="five">
+          <h4>From Concept to Reality: The Industrial Design Process</h4>
+          <p>
+            The process of industrial design is a journey from abstract ideas to
+            tangible realities. It begins with research and understanding the
+            needs of the users, followed by sketches and models that bring the
+            concept to life. Collaboration across disciplines, including
+            engineering, marketing, and psychology, is crucial to refining the
+            design and ensuring that it meets both aesthetic and functional
+            criteria.
+          </p>
+          <p>
+            Prototyping and testing are iterative steps where designs are
+            evaluated, adjusted, and re-evaluated. This cycle continues until
+            the final product meets the highest standards of quality and user
+            experience.
+          </p>
+        </section>
+        <section id="six">
+          <h4>Conclusion: The Art and Science of Industrial Design</h4>
+          <p>
+            Industrial design is a testament to human creativity and ingenuity.
+            It's a field where art meets science, and where designers
+            continually explore new ways to blend form with function. As we look
+            to the future, the principles of industrial design — empathy,
+            sustainability, innovation, and beauty — will continue to guide the
+            creation of products that improve our lives in small and significant
+            ways.
+          </p>
+          <p>
+            So, the next time you use your favorite gadget or sit in that
+            perfectly comfortable chair, take a moment to appreciate the
+            industrial design that made it possible. It's a blend of vision,
+            precision, and care that turns everyday objects into works of art
+            that work for us.
+          </p>
+          <blockquote>
+            <span class="lighter-text">
+              "Design is not just what it looks like and feels like. Design is
+              how it works." — Steve Jobs
+              <br />
+              "Everything is designed. Few things are designed well." — Brian
+              Reed
+            </span>
+          </blockquote>
+        </section>
+      </div>
+    </article>
+
+    <div class="bottom-right">
+      <div class="switch">
+        <div class="circle hover-target"></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
