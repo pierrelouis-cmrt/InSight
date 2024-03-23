@@ -101,8 +101,8 @@ mark {
     rgba(200, 200, 200, 0),
     rgba(200, 200, 200, 0.1)
   );
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1;
   -webkit-transition: all 300ms linear;
@@ -405,56 +405,66 @@ body.light .hero-center-section .left-text {
 /* #Media
 ================================================== */
 
-@media (max-width: 1199px) {
-  .hero-center-section .left-text {
-    font-size: 13vw;
+@media (max-width: 768px) {
+  body,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 200%; /* Double the font size for all text */
   }
-  .slide-buttons li {
-    margin: 50px 0;
-  }
-  .slide-buttons li a {
-    font-size: 80px;
-  }
-  .slide-buttons li a::before {
-    font-size: 80px;
-  }
-}
 
-@media (max-width: 991px) {
-  .hero-center-section .left-text {
-    font-size: 16vw;
+  :root {
+    --scale-factor: 2; /* Define a scale factor for easy adjustments */
   }
-}
 
-@media (max-width: 767px) {
-  .cursor,
-  .cursor2,
-  .cursor3 {
-    display: none;
-  }
+  /* Double the size of the hero text and ensure the container accommodates the enlarged text */
   .hero-center-section .left-text {
-    display: none;
+    font-size: calc(
+      7vw * var(--scale-factor)
+    ); /* Adjust based on viewport width */
+    transform: scale(var(--scale-factor));
   }
-  .slide-buttons li {
-    margin: 40px 0;
-  }
-  .slide-buttons li a {
-    font-size: 60px;
-    font-weight: 700;
-  }
-  .slide-buttons li a::before {
-    font-size: 60px;
-    font-weight: 700;
-  }
-}
 
-@media (max-width: 575px) {
-  .slide-buttons li a {
-    font-size: 50px;
-    font-weight: 700;
+  /* Adjust container sizes */
+  .container {
+    max-width: calc(
+      100% - 20px
+    ); /* Adjust container width to allow for padding */
+    padding: 20px; /* Add padding to ensure content doesn't touch the edges */
   }
-  .slide-buttons li a::before {
-    font-size: 50px;
-    font-weight: 700;
+
+  /* Scale images to be larger and ensure they fit within the container */
+  .img-wrap img {
+    width: calc(
+      80vw * var(--scale-factor)
+    ); /* Images to take up more of the viewport width */
+    max-width: 100%; /* Ensure images don't overflow their containers */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Double the size of the logo link and theme slider */
+  .link-to-page,
+  .link-to-page img,
+  .switch,
+  .switch .circle {
+    transform: scale(var(--scale-factor));
+  }
+
+  /* Increase the size of slide buttons */
+  .slide-buttons li a {
+    font-size: calc(100px * var(--scale-factor)); /* Double the font size */
+    padding: 0.5em; /* Add padding for larger touch targets */
+  }
+
+  /* Adjust the hero section to better accommodate enlarged elements */
+  .hero-center-section {
+    padding: calc(50px * var(--scale-factor)); /* Increase padding */
+    margin-bottom: calc(
+      30px * var(--scale-factor)
+    ); /* Adjust spacing between sections */
   }
 }

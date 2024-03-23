@@ -1,5 +1,11 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "unicons";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.woff")
+    format("woff");
+  font-display: swap;
+}
 
 * {
   box-sizing: border-box;
@@ -38,6 +44,14 @@
   --title: #fff;
   --a: #d6a26e;
   --header: rgba(29, 29, 29, 0.7);
+}
+
+:root[data-theme="dark"] blockquote .lighter-text {
+  filter: brightness(120%);
+}
+
+html {
+  width: 100vw;
 }
 
 body {
@@ -127,7 +141,6 @@ body article header .upper-header .date-since {
 }
 body article header .upper-header .date-since .date-value {
   display: inline-block;
-  padding-top: 3px;
 }
 body article header .upper-header .date-since svg {
   width: 20px;
@@ -220,9 +233,6 @@ body .main-article blockquote {
 blockquote {
   color: var(--accent);
 }
-.lighter-text {
-  filter: brightness(150%);
-}
 
 body .main-article blockquote::before {
   content: url("/Assets/QuotesFill.svg");
@@ -311,9 +321,6 @@ body .main-article .gallery .mask-off img {
   }
 }
 @media screen and (max-width: 768px) {
-  body article header .lower-header .title {
-    word-break: break-all;
-  }
   body article .summary {
     flex-direction: column;
   }
@@ -324,13 +331,36 @@ body .main-article .gallery .mask-off img {
     grid-template-areas: "img1 img1" "img1 img1" "img2 img3" "img4 img5";
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
   body {
     padding: 25px;
   }
 
   body article header .upper-header .date-since {
     display: none;
+  }
+
+  body .menu ul li a {
+    font-size: 5vh;
+  }
+  body article header .lower-header .title {
+    font-size: 4.5vh;
+    text-wrap: balance;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  body article header .lower-header .subtitle {
+    text-wrap: balance;
+  }
+}
+@media screen and (max-width: 350px) {
+  body {
+    padding: 10px;
+  }
+  body article header .lower-header .title {
+    font-size: 3.3vh;
   }
 }
 
