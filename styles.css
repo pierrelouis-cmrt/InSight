@@ -84,6 +84,7 @@ body .showcase .header {
 html .showcase .header .logo,
 body .showcase .header .logo {
   position: relative;
+  cursor: pointer;
 }
 html .showcase .header .logoimg,
 body .showcase .header .logoimg {
