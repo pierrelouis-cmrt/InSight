@@ -8,8 +8,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  overflow-y: hidden;
-  overflow-x: scroll;
+  overflow: hidden;
 }
 html *,
 body * {
@@ -382,6 +381,10 @@ body .menu ul li a:hover {
   }
 }
 @media only screen and (max-width: 767px) {
+  html,
+  body {
+    overflow-y: scroll;
+  }
   html h2,
   body h2 {
     font-size: 1.5em;
