@@ -87,6 +87,23 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
+/* MP3 */
+
+audio {
+  width: 100%;
+  margin-top: 1em;
+  border-radius: 16px;
+  box-shadow: 0 0 0 1px var(--text);
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+  background-color: var(--background);
+  color: var(--background);
+}
+
+/* Main */
+
 body article {
   width: 100%;
   max-width: 1000px;
